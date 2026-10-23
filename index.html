@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creativos Dev | Interactive Studio & Cloud Labs</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        .gradient-text {
+            background: linear-gradient(90deg, #38bdf8, #818cf8, #c084fc);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    </style>
+</head>
+<body class="bg-slate-950 text-slate-100 antialiased selection:bg-indigo-500 selection:text-white">
+
+    <!-- Navegación -->
+    <header class="fixed top-0 w-full z-50 bg-slate-950/80 backdrop-blur-md border-b border-slate-800">
+        <div class="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
+            <div class="flex items-center space-x-2">
+                <div class="w-8 h-8 rounded-lg bg-gradient-to-br from-indigo-500 to-cyan-400 flex items-center justify-center font-bold text-slate-950">
+                    CD
+                </div>
+                <span class="font-bold text-lg tracking-tight">CREATIVOS DEV</span>
+            </div>
+            <nav class="hidden md:flex space-x-8 text-sm text-slate-300">
+                <a href="#soluciones" class="hover:text-white transition">Arquitectura</a>
+                <a href="#proyectos" class="hover:text-white transition">Proyectos Activos</a>
+                <a href="#infraestructura" class="hover:text-white transition">Cloud & IA</a>
+                <a href="#contacto" class="hover:text-white transition">Contacto</a>
+            </nav>
+            <a href="mailto:hola@creativos-dev.tech" class="px-4 py-2 rounded-lg bg-indigo-600 hover:bg-indigo-500 text-sm font-medium transition">
+                Contactar Estudio
+            </a>
+        </div>
+    </header>
+
+    <!-- Sección Principal (Hero) -->
+    <section class="pt-32 pb-20 px-6 max-w-6xl mx-auto text-center">
+        <div class="inline-block px-4 py-1.5 mb-6 rounded-full bg-slate-900 border border-slate-800 text-xs font-medium text-cyan-400">
+            ESTUDIO DE DESARROLLO INTERACTIVO & AUTOMATIZACIÓN CLOUD
+        </div>
+        <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight mb-6 leading-tight">
+            Experiencias 3D Multiplataforma y <br class="hidden md:block">
+            <span class="gradient-text">Sistemas Automatizados con IA</span>
+        </h1>
+        <p class="max-w-2xl mx-auto text-slate-400 text-lg mb-10">
+            Desarrollamos videojuegos 3D de alto rendimiento para Google Play y portales web (HTML5), integrados con pipelines en Python para la generación de activos y procesamiento multimedia autónomo.
+        </p>
+        <div class="flex flex-col sm:flex-row justify-center gap-4">
+            <a href="#proyectos" class="px-8 py-3.5 rounded-xl bg-white text-slate-950 font-semibold hover:bg-slate-200 transition">
+                Ver Portafolio
+            </a>
+            <a href="#infraestructura" class="px-8 py-3.5 rounded-xl bg-slate-900 border border-slate-800 text-slate-200 font-semibold hover:bg-slate-800 transition">
+                Nuestra Tecnología Cloud
+            </a>
+        </div>
+    </section>
+
+    <!-- Áreas de Especialización -->
+    <section id="soluciones" class="py-16 px-6 max-w-6xl mx-auto border-t border-slate-900">
+        <div class="grid md:grid-cols-3 gap-8">
+            <div class="p-6 rounded-2xl bg-slate-900/50 border border-slate-800">
+                <div class="text-cyan-400 font-bold text-sm mb-2">01 / GAMING & 3D</div>
+                <h3 class="text-xl font-bold mb-3">Videojuegos Multiplataforma</h3>
+                <p class="text-slate-400 text-sm leading-relaxed">
+                    Creación de juegos de acción 3D en Unity y Blender, optimizados para despliegue en tiendas móviles y distribución mediante compilación WebGL / HTML5.
+                </p>
+            </div>
+            <div class="p-6 rounded-2xl bg-slate-900/50 border border-slate-800">
+                <div class="text-indigo-400 font-bold text-sm mb-2">02 / CLOUD PIPELINES</div>
+                <h3 class="text-xl font-bold mb-3">Automatización Multimedia</h3>
+                <p class="text-slate-400 text-sm leading-relaxed">
+                    Arquitecturas programadas en Python para síntesis de voz, generación de guiones y ensamblaje automatizado de video para distribución multicanal.
+                </p>
+            </div>
+            <div class="p-6 rounded-2xl bg-slate-900/50 border border-slate-800">
+                <div class="text-purple-400 font-bold text-sm mb-2">03 / IA INTEGRATION</div>
+                <h3 class="text-xl font-bold mb-3">Agentes y Modelado IA</h3>
+                <p class="text-slate-400 text-sm leading-relaxed">
+                    Uso de modelos generativos y flujos de trabajo con agentes autónomos para acelerar la creación de mallas 3D y estructurar bases de código.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Proyectos Activos -->
+    <section id="proyectos" class="py-20 px-6 max-w-6xl mx-auto">
+        <div class="mb-12">
+            <h2 class="text-3xl font-bold mb-3">Productos en Desarrollo</h2>
+            <p class="text-slate-400">Soluciones propias en fase de producción e integración continua.</p>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-8">
+            <!-- Proyecto 1 -->
+            <div class="rounded-2xl overflow-hidden bg-slate-900 border border-slate-800 flex flex-col">
+                <div class="h-48 bg-slate-800 overflow-hidden relative">
+                    <img src="proyecto1.png" 
+                         onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1552820728-8b83bb6b773f?auto=format&fit=crop&w=800&q=80';" 
+                         alt="3D Combat Racing Game" 
+                         class="w-full h-full object-cover">
+                    <span class="absolute top-3 right-3 px-2.5 py-1 rounded bg-emerald-500/20 border border-emerald-500/40 text-emerald-300 text-xs font-semibold backdrop-blur-sm">
+                        Unity 3D
+                    </span>
+                </div>
+                <div class="p-6 flex-1 flex flex-col justify-between">
+                    <div>
+                        <h3 class="font-bold text-lg mb-2">Death Racing 3D</h3>
+                        <p class="text-slate-400 text-sm mb-4">
+                            Juego de carreras vehiculares y combate en 3D desarrollado en Unity. Incluye físicas personalizadas y optimización de assets de Blender para plataformas móviles y navegadores web.
+                        </p>
+                    </div>
+                    <div class="text-xs text-slate-500 font-mono">Stack: Unity • C# • Blender • HTML5</div>
+                </div>
+            </div>
+
+            <!-- Proyecto 2 -->
+            <div class="rounded-2xl overflow-hidden bg-slate-900 border border-slate-800 flex flex-col">
+                <div class="h-48 bg-slate-800 overflow-hidden relative">
+                    <img src="proyecto2.png" 
+                         onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=800&q=80';" 
+                         alt="Python Automation System" 
+                         class="w-full h-full object-cover">
+                    <span class="absolute top-3 right-3 px-2.5 py-1 rounded bg-indigo-500/20 border border-indigo-500/40 text-indigo-300 text-xs font-semibold backdrop-blur-sm">
+                        Python / Cloud
+                    </span>
+                </div>
+                <div class="p-6 flex-1 flex flex-col justify-between">
+                    <div>
+                        <h3 class="font-bold text-lg mb-2">Automated Video Pipeline</h3>
+                        <p class="text-slate-400 text-sm mb-4">
+                            Sistema en Python para la generación integral de contenido. Orquesta la escritura de guiones, llamadas a APIs de voz neural y edición de video autónoma.
+                        </p>
+                    </div>
+                    <div class="text-xs text-slate-500 font-mono">Stack: Python • APIs IA • Cloud Compute</div>
+                </div>
+            </div>
+
+            <!-- Proyecto 3 -->
+            <div class="rounded-2xl overflow-hidden bg-slate-900 border border-slate-800 flex flex-col">
+                <div class="h-48 bg-slate-800 overflow-hidden relative">
+                    <img src="proyecto3.png" 
+                         onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?auto=format&fit=crop&w=800&q=80';" 
+                         alt="Mobile Apps" 
+                         class="w-full h-full object-cover">
+                    <span class="absolute top-3 right-3 px-2.5 py-1 rounded bg-cyan-500/20 border border-cyan-500/40 text-cyan-300 text-xs font-semibold backdrop-blur-sm">
+                        Google Play
+                    </span>
+                </div>
+                <div class="p-6 flex-1 flex flex-col justify-between">
+                    <div>
+                        <h3 class="font-bold text-lg mb-2">Ecosistema Móvil</h3>
+                        <p class="text-slate-400 text-sm mb-4">
+                            Desarrollo y mantenimiento de aplicaciones interactivas en Google Play Store, garantizando el cumplimiento de políticas de audiencia y optimización de rendimiento.
+                        </p>
+                    </div>
+                    <div class="text-xs text-slate-500 font-mono">Stack: Android • Play Console • Analytics</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Infraestructura y Cloud -->
+    <section id="infraestructura" class="py-16 px-6 max-w-6xl mx-auto">
+        <div class="p-8 md:p-12 rounded-3xl bg-gradient-to-br from-slate-900 to-indigo-950/40 border border-slate-800">
+            <h2 class="text-2xl md:text-3xl font-bold mb-4">Infraestructura Cloud & Escalabilidad</h2>
+            <p class="text-slate-300 max-w-3xl mb-6 leading-relaxed">
+                Nuestras operaciones requieren instancias de cómputo robustas para ejecutar scripts de Python, compilar proyectos de Unity, realizar renderizado 3D y gestionar bases de datos para nuestras aplicaciones móviles. Buscamos apalancar infraestructura en la nube para estabilizar nuestros despliegues y soportar el tráfico de usuarios en producción.
+            </p>
+            <div class="flex flex-wrap gap-3 text-xs font-mono text-indigo-300">
+                <span class="px-3 py-1.5 rounded-lg bg-slate-950/60 border border-slate-800">Virtual Machines</span>
+                <span class="px-3 py-1.5 rounded-lg bg-slate-950/60 border border-slate-800">GPU Compute</span>
+                <span class="px-3 py-1.5 rounded-lg bg-slate-950/60 border border-slate-800">Cloud Storage</span>
+                <span class="px-3 py-1.5 rounded-lg bg-slate-950/60 border border-slate-800">API Gateway</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contacto y Footer -->
+    <footer id="contacto" class="py-16 px-6 border-t border-slate-900 bg-slate-950">
+        <div class="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-start md:items-center gap-8">
+            <div>
+                <h3 class="text-xl font-bold mb-2">CREATIVOS DEV</h3>
+                <p class="text-slate-400 text-sm">Estudio Independiente de Desarrollo de Software y Videojuegos.</p>
+                <p class="text-slate-500 text-xs mt-1">Valle del Cauca, Colombia • Operación Global</p>
+            </div>
+            <div class="bg-slate-900 px-6 py-4 rounded-xl border border-slate-800">
+                <div class="text-xs text-slate-400 mb-1">Correo Corporativo Oficial:</div>
+                <a href="mailto:hola@creativos-dev.tech" class="text-cyan-400 font-mono font-semibold hover:underline">
+                    hola@creativos-dev.tech
+                </a>
+            </div>
+        </div>
+        <div class="max-w-6xl mx-auto mt-12 pt-8 border-t border-slate-900 text-xs text-slate-600 flex justify-between">
+            <span>© 2026 Creativos Dev. Todos los derechos reservados.</span>
+            <span>creativos-dev.tech</span>
+        </div>
+    </footer>
+</body>
+</html>
